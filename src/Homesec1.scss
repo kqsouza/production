@@ -1,0 +1,84 @@
+#homesec1{
+
+  .contentwraper{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+  &::before{
+    content: '';
+    width: 100px;
+    height: 23px;
+    position: absolute; 
+    top: 96%;
+    left: 47.3%;
+    background: url('https://gist.githubusercontent.com/kqsouza/08d941843c4614ec582ead53b3d8b43f/raw/04c0f46091f369c353d05ba95b8476fdbcb4d389/downarrow.svg');
+    background-repeat: no-repeat;
+  }
+
+    .midcontent{
+      font-family: "Press",cursive;
+      color: white;
+      font-size: 20px;
+      position: relative;
+
+      &::before{
+        position: absolute;
+        content: '';
+        width: 647px;
+        height: 521px;
+        top: 0;
+        left: -5%;
+        background: url('https://gist.githubusercontent.com/kqsouza/c1cc800d00e98bc18ded374f27ce6393/raw/2dc6146797bba28757fdec0f696b94e887453766/home.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 0;
+      }
+
+      &::after{
+        position: absolute;
+        content: '';
+        width: 230px;
+        height: 200px;
+        bottom: 18%;
+        right: -40%;
+        z-index: 5;
+        background: url('https://gist.githubusercontent.com/kqsouza/eeaecb3971ccb79cf7f894a86986e6db/raw/7127d4a27ccb5549591c07d48ddd8d9bd02bce59/balloong.svg');
+        color: #07518A;
+        background-repeat: no-repeat;
+      }
+      p{
+        position: absolute;
+       
+
+        &:nth-child(1){
+          top: 23%;
+          
+        }
+      &:nth-child(2){
+        top: 30%;
+        left: 30%;
+      }
+      }
+
+      img{
+      position: relative;
+      width: 400px;
+      height: 250px;
+      margin-top: 180px;
+      z-index: 5;
+      }
+    }
+
+  }
+
+}
+
+@font-face{
+  font-family: "Press";
+  src: url("../fonts/PressStart2P-vaV7.ttf");
+}
